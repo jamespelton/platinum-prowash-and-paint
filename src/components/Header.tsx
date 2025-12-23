@@ -55,10 +55,10 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Call Now Button */}
+          {/* CTA Button */}
           <a href="tel:5177557966" className="btn btn-primary call-btn">
             <FaPhone />
-            <span>Call Now</span>
+            <span>Free Quote</span>
           </a>
 
           {/* Mobile Menu Toggle */}

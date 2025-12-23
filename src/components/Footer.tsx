@@ -95,6 +95,9 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
+          <p className="footer-tagline-bottom">
+            Lincoln's Premier Exterior Cleaning Specialists. <span>Satisfaction Guaranteed.</span>
+          </p>
           <p className="copyright">
             © {new Date().getFullYear()} ProWash. All rights reserved. | Licensed, Bonded & Insured
           </p>
