@@ -9,27 +9,27 @@ const ChristmasLights = () => {
 
   const images = [
     {
-      src: '/images/christmas-lights/christmas_lights1.png',
+      src: '/images/christmas-lights/christmas_lights1.jpg',
       alt: 'Professional Christmas lights on home exterior'
     },
     {
-      src: '/images/christmas-lights/christmas_lights2.png',
+      src: '/images/christmas-lights/christmas_lights2.jpg',
       alt: 'Holiday lighting installation with warm white lights'
     },
     {
-      src: '/images/christmas-lights/christmas_lights3.png',
+      src: '/images/christmas-lights/christmas_lights3.jpg',
       alt: 'Festive Christmas light display on residential property'
     },
     {
-      src: '/images/christmas-lights/christmas_lights4.png',
+      src: '/images/christmas-lights/christmas_lights4.jpg',
       alt: 'RGB holiday lights creating colorful display'
     },
     {
-      src: '/images/christmas-lights/christmas_lights5.png',
+      src: '/images/christmas-lights/christmas_lights5.jpg',
       alt: 'Two-story home decorated with Christmas lights'
     },
     {
-      src: '/images/christmas-lights/christmas_lights6.png',
+      src: '/images/christmas-lights/christmas_lights6.jpg',
       alt: 'Complete holiday lighting package on large home'
     }
   ]
@@ -89,7 +89,7 @@ const ChristmasLights = () => {
               data-aos-delay={index * 100}
               onClick={() => openLightbox(index)}
             >
-              <img src={image.src} alt={image.alt} />
+              <img src={image.src} alt={image.alt} loading="lazy" decoding="async" />
               <div className="christmas-overlay">
                 <span>View</span>
               </div>

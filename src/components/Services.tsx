@@ -71,13 +71,13 @@ const Services = () => {
       categories: ['commercial', 'multi-family']
     },
     {
-      image: '/images/before-after/pool/after_pool1.png',
+      image: '/images/before-after/pool/after_pool1.jpg',
       title: 'Pool Deck Cleaning',
       description: 'Keep your pool area safe and spotless. We clean pool decks, surrounding concrete, and tile to remove algae, mildew, and slippery buildup for a clean, inviting space.',
       categories: ['residential', 'multi-family']
     },
     {
-      image: '/images/christmas-lights/christmas_lights1.png',
+      image: '/images/christmas-lights/christmas_lights1.jpg',
       title: 'Christmas Light Installation',
       description: 'Make your home shine this holiday season. We professionally install, maintain, and remove Christmas lights so you can enjoy the festive glow without the hassle of ladders and tangled wires.',
       categories: ['residential', 'commercial']
@@ -116,7 +116,7 @@ const Services = () => {
               data-aos-delay={(index % 6) * 50}
             >
               <div className="service-image-wrapper">
-                <img src={service.image} alt={service.title} className="service-image" />
+                <img src={service.image} alt={service.title} className="service-image" loading="lazy" decoding="async" />
               </div>
               <div className="service-content">
                 <h3 className="service-title">{service.title}</h3>

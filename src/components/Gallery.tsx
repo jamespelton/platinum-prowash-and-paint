@@ -120,7 +120,7 @@ const Gallery = () => {
               data-aos-delay={index * 50}
               onClick={() => openLightbox(index)}
             >
-              <img src={image.src} alt={image.alt} />
+              <img src={image.src} alt={image.alt} loading="lazy" decoding="async" />
               <div className="gallery-overlay">
                 <FaSearchPlus className="gallery-icon" />
                 <span className="gallery-label">{image.label}</span>

@@ -17,28 +17,28 @@ const BeforeAfterSlider = () => {
 
   const comparisons: ComparisonItem[] = [
     {
-      before: '/images/before-after/painting/before_paint2.png',
-      after: '/images/before-after/painting/after_paint2.png',
+      before: '/images/before-after/painting/before_paint2.jpg',
+      after: '/images/before-after/painting/after_paint2.jpg',
       label: 'Exterior Painting'
     },
     {
-      before: '/images/before-after/painting/before_paint3.png',
-      after: '/images/before-after/painting/after_paint3.png',
+      before: '/images/before-after/painting/before_paint3.jpg',
+      after: '/images/before-after/painting/after_paint3.jpg',
       label: 'House Painting'
     },
     {
-      before: '/images/before-after/painting/before_paint4.png',
-      after: '/images/before-after/painting/after_paint4.png',
+      before: '/images/before-after/painting/before_paint4.jpg',
+      after: '/images/before-after/painting/after_paint4.jpg',
       label: 'Residential Painting'
     },
     {
-      before: '/images/before-after/painting/before_paint5.png',
-      after: '/images/before-after/painting/after_paint5.png',
+      before: '/images/before-after/painting/before_paint5.jpg',
+      after: '/images/before-after/painting/after_paint5.jpg',
       label: 'Home Transformation'
     },
     {
-      before: '/images/before-after/pool/before_pool1.png',
-      after: '/images/before-after/pool/after_pool1.png',
+      before: '/images/before-after/pool/before_pool1.jpg',
+      after: '/images/before-after/pool/after_pool1.jpg',
       label: 'Pool Deck Cleaning',
       quote: 'Professional, on-time, and fair pricing. The transformation was exactly what we were looking for.'
     }
