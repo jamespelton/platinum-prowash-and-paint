@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Platinum Surface Cleaning is a React 18 single-page marketing website for an exterior services company (pressure washing, painting, restoration, holiday lighting). Built with TypeScript (strict mode) and Vite 5. Domain: paintnebraska.com
+Platinum ProWash & Paint is a React 18 single-page marketing website for an exterior services company (pressure washing, painting, restoration, holiday lighting). Built with TypeScript (strict mode) and Vite 5. Domain: paintnebraska.com
 
 ## Commands
 
@@ -46,7 +46,7 @@ npm run lint     # Run ESLint
 export const PHONE_NUMBER = '(517) 755-7966'
 export const PHONE_NUMBER_RAW = '5177557966'
 export const EMAIL = 'Bryceredman83@icloud.com'
-export const BUSINESS_NAME = 'Platinum Surface Cleaning'
+export const BUSINESS_NAME = 'Platinum ProWash & Paint'
 ```
 
 ## Important Notes

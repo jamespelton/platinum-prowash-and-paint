@@ -23,7 +23,7 @@ const Services = () => {
       categories: ['residential', 'commercial', 'multi-family']
     },
     {
-      image: '/images/services/concrete-cleaning.jpg',
+      image: '/images/services/concrete.jpg',
       title: 'Concrete & Brick Cleaning',
       description: 'Professional cleaning for driveways, patios, sidewalks, and masonry. We blast away tough stains, oil spots, and weathering to restore your concrete and brick to their original look.',
       categories: ['residential', 'commercial', 'multi-family']
