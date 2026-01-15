@@ -1,6 +1,6 @@
 /* ===================================
-   PROWASH PREMIUM DESIGN SYSTEM
-   Deep Clean Aesthetic
+   PLATINUM SURFACE CLEANING
+   Patriotic Professional Design System
    =================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap');
@@ -12,21 +12,26 @@
 }
 
 :root {
-  /* Premium Color Palette - Deep Clean Aesthetic */
-  --color-deep-blue: #001F3F;
-  --color-navy: #0A2647;
-  --color-slate: #144272;
-  --color-lime: #C0FF00;
-  --color-lime-dark: #9ACC00;
+  /* Patriotic Color Palette - Professional Red & Blue */
+  --color-deep-blue: #0A1628;
+  --color-navy: #102A43;
+  --color-slate: #1E3A5F;
+  --color-red: #C41E3A;
+  --color-red-dark: #9B1B30;
+  --color-red-light: #E63946;
   --color-white: #FFFFFF;
-  --color-light-grey: #F8FAFC;
-  --color-mid-grey: #64748B;
-  --color-dark-grey: #334155;
+  --color-light-grey: #F5F7FA;
+  --color-mid-grey: #5A6978;
+  --color-dark-grey: #2D3748;
+
+  /* Legacy aliases for compatibility */
+  --color-lime: var(--color-red);
+  --color-lime-dark: var(--color-red-dark);
 
   /* Glass Effect Colors */
-  --glass-bg: rgba(0, 31, 63, 0.7);
-  --glass-border: rgba(192, 255, 0, 0.2);
-  --glass-shadow: rgba(0, 31, 63, 0.3);
+  --glass-bg: rgba(10, 22, 40, 0.85);
+  --glass-border: rgba(196, 30, 58, 0.25);
+  --glass-shadow: rgba(10, 22, 40, 0.4);
 
   /* Typography */
   --font-heading: 'Montserrat', sans-serif;
@@ -46,11 +51,11 @@
   --radius-xl: 28px;
 
   /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(0, 31, 63, 0.08);
-  --shadow-md: 0 8px 24px rgba(0, 31, 63, 0.12);
-  --shadow-lg: 0 16px 48px rgba(0, 31, 63, 0.16);
-  --shadow-glow: 0 0 30px rgba(192, 255, 0, 0.4);
-  --shadow-glow-sm: 0 0 15px rgba(192, 255, 0, 0.3);
+  --shadow-sm: 0 2px 8px rgba(10, 22, 40, 0.08);
+  --shadow-md: 0 8px 24px rgba(10, 22, 40, 0.12);
+  --shadow-lg: 0 16px 48px rgba(10, 22, 40, 0.18);
+  --shadow-glow: 0 0 30px rgba(196, 30, 58, 0.35);
+  --shadow-glow-sm: 0 0 15px rgba(196, 30, 58, 0.25);
 
   /* Transitions */
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -166,13 +171,13 @@ section {
 }
 
 .btn-primary {
-  background: var(--color-lime);
-  color: var(--color-deep-blue);
+  background: var(--color-red);
+  color: var(--color-white);
   box-shadow: var(--shadow-glow-sm);
 }
 
 .btn-primary:hover {
-  background: var(--color-lime-dark);
+  background: var(--color-red-dark);
   transform: translateY(-3px);
   box-shadow: var(--shadow-glow);
 }
@@ -247,7 +252,7 @@ section {
 .accent-line {
   width: 60px;
   height: 4px;
-  background: var(--color-lime);
+  background: var(--color-red);
   border-radius: 2px;
   margin: 0 auto var(--spacing-md);
 }
@@ -318,8 +323,9 @@ section {
   color: var(--color-white) !important;
 }
 
-.text-lime {
-  color: var(--color-lime) !important;
+.text-lime,
+.text-accent {
+  color: var(--color-red) !important;
 }
 
 .bg-light {
@@ -346,7 +352,7 @@ section {
 
 /* Gradient Text */
 .gradient-text {
-  background: linear-gradient(135deg, var(--color-lime) 0%, #7FFF00 100%);
+  background: linear-gradient(135deg, var(--color-red) 0%, var(--color-red-light) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -355,8 +361,13 @@ section {
 /* Subtle Background Pattern */
 .bg-pattern {
   background-image:
-    radial-gradient(circle at 25% 25%, rgba(192, 255, 0, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 75% 75%, rgba(0, 31, 63, 0.03) 0%, transparent 50%);
+    radial-gradient(circle at 25% 25%, rgba(196, 30, 58, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(10, 22, 40, 0.03) 0%, transparent 50%);
+}
+
+/* Text utility for red accent */
+.text-red {
+  color: var(--color-red) !important;
 }
 
 /* Animation Keyframes */

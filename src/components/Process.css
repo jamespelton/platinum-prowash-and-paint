@@ -15,7 +15,7 @@
   left: -10%;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(192, 255, 0, 0.03) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(196, 30, 58, 0.03) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -25,12 +25,12 @@
   font-family: var(--font-heading);
   font-size: 0.875rem;
   font-weight: 700;
-  color: var(--color-lime-dark);
+  color: var(--color-red-dark);
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 1rem;
   padding: 0.5rem 1.25rem;
-  background: rgba(192, 255, 0, 0.1);
+  background: rgba(196, 30, 58, 0.1);
   border-radius: var(--radius-md);
 }
 
@@ -65,7 +65,7 @@
 .step-number {
   width: 70px;
   height: 70px;
-  background: linear-gradient(135deg, var(--color-lime) 0%, var(--color-lime-dark) 100%);
+  background: linear-gradient(135deg, var(--color-red) 0%, var(--color-red-dark) 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -73,8 +73,8 @@
   font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 900;
-  color: var(--color-deep-blue);
-  box-shadow: 0 8px 30px rgba(192, 255, 0, 0.3);
+  color: var(--color-white);
+  box-shadow: 0 8px 30px rgba(196, 30, 58, 0.3);
   position: relative;
   z-index: 2;
 }
@@ -86,7 +86,7 @@
   transform: translateX(-50%);
   width: 3px;
   height: calc(100% - 40px);
-  background: linear-gradient(180deg, var(--color-lime) 0%, rgba(192, 255, 0, 0.2) 100%);
+  background: linear-gradient(180deg, var(--color-red) 0%, rgba(196, 30, 58, 0.2) 100%);
   border-radius: 2px;
   z-index: 1;
 }

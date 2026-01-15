@@ -1,4 +1,5 @@
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram } from 'react-icons/fa'
+import { PHONE_NUMBER, PHONE_NUMBER_RAW, EMAIL, BUSINESS_NAME } from '../constants'
 import './Footer.css'
 
 const Footer = () => {
@@ -16,11 +17,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="footer-col">
             <div className="footer-logo">
-              <h3>ProWash</h3>
+              <h3>{BUSINESS_NAME}</h3>
               <p className="footer-tagline">Professional Exterior Services</p>
             </div>
             <p className="footer-description">
-              Trusted pressure washing, painting, and restoration services in Lincoln and Beatrice, NE. Over 12 years of excellence.
+              Trusted pressure washing, painting, and restoration services in Lincoln and Beatrice, NE. Over 2,500 happy customers served.
             </p>
             <div className="footer-social">
               <a href="https://www.facebook.com/profile.php?id=61574731156820" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -69,8 +70,9 @@ const Footer = () => {
               <li>Concrete & Brick Cleaning</li>
               <li>Soft-Wash Roof Cleaning</li>
               <li>Exterior & Interior Painting</li>
-              <li>Deck & Fence Staining</li>
-              <li>Holiday Lighting</li>
+              <li>Tile & Grout Cleaning</li>
+              <li>Graffiti Removal</li>
+              <li>Christmas Lights</li>
             </ul>
           </div>
 
@@ -80,11 +82,11 @@ const Footer = () => {
             <ul className="footer-contact">
               <li>
                 <FaPhone />
-                <a href="tel:5177557966">(517) 755-7966</a>
+                <a href={`tel:${PHONE_NUMBER_RAW}`}>{PHONE_NUMBER}</a>
               </li>
               <li>
                 <FaEnvelope />
-                <a href="mailto:Bryceredman83@icloud.com">Bryceredman83@icloud.com</a>
+                <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
               </li>
               <li>
                 <FaMapMarkerAlt />
@@ -96,10 +98,10 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p className="footer-tagline-bottom">
-            Lincoln's Premier Exterior Cleaning Specialists. <span>Satisfaction Guaranteed.</span>
+            Lincoln & Beatrice's Premier Exterior Cleaning Specialists. <span>Satisfaction Guaranteed.</span>
           </p>
           <p className="copyright">
-            © {new Date().getFullYear()} ProWash. All rights reserved. | Licensed, Bonded & Insured
+            © {new Date().getFullYear()} {BUSINESS_NAME}. All rights reserved. | Licensed, Bonded & Insured
           </p>
           <p className="credit">
             Website by James Pelton Web & AI

@@ -34,9 +34,9 @@ const WhyUs = () => {
     <section id="why-us" className="why-us bg-light">
       <div className="container">
         <div className="section-header" data-aos="fade-up">
-          <h2 className="section-title">Why Choose ProWash?</h2>
+          <h2 className="section-title">Why Choose Platinum Surface Cleaning?</h2>
           <p className="section-subtitle">
-            Your home is your biggest investment. Trust it to professionals who care about quality, honesty, and your complete satisfaction.
+            Your property is your biggest investment. Trust it to professionals who care about quality, honesty, and your complete satisfaction.
           </p>
         </div>
 
@@ -61,12 +61,12 @@ const WhyUs = () => {
 
         <div className="why-us-stats" data-aos="fade-up">
           <div className="stat">
-            <div className="stat-number">12+</div>
-            <div className="stat-label">Years in Business</div>
+            <div className="stat-number">2,500+</div>
+            <div className="stat-label">Happy Customers</div>
           </div>
           <div className="stat">
-            <div className="stat-number">1000+</div>
-            <div className="stat-label">Happy Customers</div>
+            <div className="stat-number">12+</div>
+            <div className="stat-label">Years in Business</div>
           </div>
           <div className="stat">
             <div className="stat-number">100%</div>

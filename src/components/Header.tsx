@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { FaPhone, FaBars, FaTimes } from 'react-icons/fa'
+import { PHONE_NUMBER, PHONE_NUMBER_RAW, BUSINESS_NAME } from '../constants'
 import './Header.css'
 
 const Header = () => {
@@ -38,7 +39,7 @@ const Header = () => {
         <div className="header-content">
           {/* Logo/Brand */}
           <div className="logo" onClick={() => scrollToSection('hero')}>
-            <h1 className="logo-text">ProWash</h1>
+            <h1 className="logo-text">{BUSINESS_NAME}</h1>
             <span className="logo-tagline">Professional Exterior Services</span>
           </div>
 
@@ -56,7 +57,7 @@ const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <a href="tel:5177557966" className="btn btn-primary call-btn">
+          <a href={`tel:${PHONE_NUMBER_RAW}`} className="btn btn-primary call-btn">
             <FaPhone />
             <span>Free Quote</span>
           </a>
@@ -84,8 +85,8 @@ const Header = () => {
               {link.label}
             </button>
           ))}
-          <a href="tel:5177557966" className="mobile-call-btn">
-            <FaPhone /> Call (517) 755-7966
+          <a href={`tel:${PHONE_NUMBER_RAW}`} className="mobile-call-btn">
+            <FaPhone /> Call {PHONE_NUMBER}
           </a>
         </nav>
       </div>

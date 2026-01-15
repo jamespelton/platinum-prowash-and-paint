@@ -25,8 +25,8 @@
 }
 
 .faq-item.open {
-  border-color: rgba(192, 255, 0, 0.4);
-  box-shadow: 0 8px 32px rgba(0, 31, 63, 0.1);
+  border-color: rgba(196, 30, 58, 0.4);
+  box-shadow: 0 8px 32px rgba(10, 22, 40, 0.12);
 }
 
 .faq-question {
@@ -44,7 +44,7 @@
 }
 
 .faq-question:hover {
-  background: rgba(192, 255, 0, 0.05);
+  background: rgba(196, 30, 58, 0.05);
 }
 
 .question-text {
@@ -58,13 +58,13 @@
 .faq-icon {
   flex-shrink: 0;
   font-size: 0.875rem;
-  color: var(--color-lime-dark);
+  color: var(--color-red-dark);
   transition: transform 0.3s ease;
 }
 
 .faq-item.open .faq-icon {
   transform: rotate(180deg);
-  color: var(--color-lime);
+  color: var(--color-red);
 }
 
 .faq-answer {
@@ -113,7 +113,7 @@
   right: -30%;
   width: 100%;
   height: 200%;
-  background: radial-gradient(circle, rgba(192, 255, 0, 0.08) 0%, transparent 50%);
+  background: radial-gradient(circle, rgba(196, 30, 58, 0.08) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -128,15 +128,15 @@
 }
 
 .faq-cta .btn {
-  background: var(--color-lime);
-  color: var(--color-deep-blue);
+  background: var(--color-red);
+  color: var(--color-white);
   box-shadow: var(--shadow-glow-sm);
   position: relative;
   z-index: 1;
 }
 
 .faq-cta .btn:hover {
-  background: var(--color-lime-dark);
+  background: var(--color-red-dark);
   box-shadow: var(--shadow-glow);
 }
 

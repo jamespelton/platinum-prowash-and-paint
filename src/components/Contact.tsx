@@ -1,4 +1,5 @@
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaCreditCard } from 'react-icons/fa'
+import { PHONE_NUMBER, PHONE_NUMBER_RAW, EMAIL } from '../constants'
 import './Contact.css'
 
 const Contact = () => {
@@ -84,6 +85,12 @@ const Contact = () => {
                   <option value="Roof Cleaning">Roof Cleaning</option>
                   <option value="Painting">Exterior/Interior Painting</option>
                   <option value="Deck Staining">Deck & Fence Staining</option>
+                  <option value="Kitchen Exhaust">Kitchen Exhaust Cleaning</option>
+                  <option value="Tile Grout">Tile & Grout Cleaning</option>
+                  <option value="Gum Removal">Gum Removal</option>
+                  <option value="Graffiti Removal">Graffiti & Stain Removal</option>
+                  <option value="Pool Cleaning">Pool Deck Cleaning</option>
+                  <option value="Christmas Lights">Christmas Light Installation</option>
                   <option value="Other">Other / Multiple Services</option>
                 </select>
               </div>
@@ -112,8 +119,8 @@ const Contact = () => {
               </div>
               <div className="info-content">
                 <h3>Call Us</h3>
-                <a href="tel:5177557966" className="info-link">
-                  (517) 755-7966
+                <a href={`tel:${PHONE_NUMBER_RAW}`} className="info-link">
+                  {PHONE_NUMBER}
                 </a>
                 <p>Available 24/7 for emergencies</p>
               </div>
@@ -125,8 +132,8 @@ const Contact = () => {
               </div>
               <div className="info-content">
                 <h3>Email Us</h3>
-                <a href="mailto:Bryceredman83@icloud.com" className="info-link">
-                  Bryceredman83@icloud.com
+                <a href={`mailto:${EMAIL}`} className="info-link">
+                  {EMAIL}
                 </a>
                 <p>We'll respond within 24 hours</p>
               </div>

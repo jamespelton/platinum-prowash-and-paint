@@ -1,5 +1,6 @@
 import { FaPhone, FaStar, FaShieldAlt, FaMapMarkerAlt, FaArrowDown } from 'react-icons/fa'
 import { motion } from 'framer-motion'
+import { PHONE_NUMBER, PHONE_NUMBER_RAW } from '../constants'
 import './Hero.css'
 
 const Hero = () => {
@@ -47,9 +48,9 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              Restore Your Home's
-              <span className="highlight"> Brilliance</span>
-              <span className="highlight-sub"> Instantly</span>
+              From Grime to
+              <span className="highlight"> Prime</span>
+              <span className="highlight-sub"> and Paint</span>
             </motion.h1>
 
             <motion.p
@@ -58,8 +59,9 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              Professional pressure washing, soft-wash cleaning, painting & holiday lighting services.
-              Experience the dramatic transformation that only 12+ years of expertise can deliver.
+              Professional pressure washing, soft-wash cleaning, painting & holiday lighting for
+              residential, commercial, and multi-family properties.
+              Trusted by over 2,500 happy customers across Nebraska.
             </motion.p>
 
             <motion.div
@@ -71,9 +73,9 @@ const Hero = () => {
               <button onClick={scrollToContact} className="btn btn-primary btn-large hero-btn-primary">
                 Get Your Free Estimate
               </button>
-              <a href="tel:5177557966" className="btn btn-secondary btn-large hero-btn-secondary">
+              <a href={`tel:${PHONE_NUMBER_RAW}`} className="btn btn-secondary btn-large hero-btn-secondary">
                 <FaPhone />
-                (517) 755-7966
+                {PHONE_NUMBER}
               </a>
             </motion.div>
           </motion.div>
