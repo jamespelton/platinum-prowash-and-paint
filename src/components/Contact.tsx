@@ -1,8 +1,37 @@
+import { useState, FormEvent } from 'react'
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaCreditCard } from 'react-icons/fa'
 import { PHONE_NUMBER, PHONE_NUMBER_RAW, EMAIL } from '../constants'
 import './Contact.css'
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+
+    const form = e.currentTarget
+    const formData = new FormData(form)
+
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData as unknown as Record<string, string>).toString()
+      })
+
+      if (response.ok) {
+        window.location.href = '/success.html'
+      } else {
+        alert('Something went wrong. Please call us directly.')
+        setIsSubmitting(false)
+      }
+    } catch (error) {
+      alert('Something went wrong. Please call us directly.')
+      setIsSubmitting(false)
+    }
+  }
+
   return (
     <section id="contact" className="contact">
       <div className="container">
@@ -21,7 +50,7 @@ const Contact = () => {
               method="POST"
               data-netlify="true"
               netlify-honeypot="bot-field"
-              action="/success.html"
+              onSubmit={handleSubmit}
               className="contact-form"
             >
               <input type="hidden" name="form-name" value="contact" />
@@ -103,8 +132,12 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <button type="submit" className="btn btn-primary btn-large submit-btn">
-                Get Your Free Estimate
+              <button
+                type="submit"
+                className="btn btn-primary btn-large submit-btn"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? 'Sending...' : 'Get Your Free Estimate'}
               </button>
             </form>
           </div>
