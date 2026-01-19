@@ -21,6 +21,7 @@ const Contact = () => {
               method="POST"
               data-netlify="true"
               netlify-honeypot="bot-field"
+              action="/success.html"
               className="contact-form"
             >
               <input type="hidden" name="form-name" value="contact" />
@@ -85,9 +86,6 @@ const Contact = () => {
                   <option value="Roof Cleaning">Roof Cleaning</option>
                   <option value="Painting">Exterior/Interior Painting</option>
                   <option value="Deck Staining">Deck & Fence Staining</option>
-                  <option value="Kitchen Exhaust">Kitchen Exhaust Cleaning</option>
-                  <option value="Tile Grout">Tile & Grout Cleaning</option>
-                  <option value="Gum Removal">Gum Removal</option>
                   <option value="Graffiti Removal">Graffiti & Stain Removal</option>
                   <option value="Pool Cleaning">Pool Deck Cleaning</option>
                   <option value="Christmas Lights">Christmas Light Installation</option>

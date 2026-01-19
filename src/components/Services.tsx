@@ -47,24 +47,6 @@ const Services = () => {
       categories: ['residential']
     },
     {
-      image: '/images/services/kitchen-exhaust.jpg',
-      title: 'Kitchen Exhaust Cleaning',
-      description: 'Commercial-grade kitchen exhaust hood and duct cleaning. We remove grease buildup to reduce fire hazards, improve air quality, and keep your kitchen compliant with safety codes.',
-      categories: ['commercial']
-    },
-    {
-      image: '/images/services/grout.jpg',
-      title: 'Tile & Grout Cleaning',
-      description: 'Deep cleaning and restoration for tile floors, showers, and backsplashes. We remove embedded dirt, mold, and stains to make your tile and grout look brand new again.',
-      categories: ['residential', 'commercial', 'multi-family']
-    },
-    {
-      image: '/images/services/gum-removal.jpg',
-      title: 'Gum Removal',
-      description: 'Professional gum removal for sidewalks, parking lots, and commercial spaces. We eliminate unsightly gum spots quickly and effectively without damaging your surfaces.',
-      categories: ['commercial', 'multi-family']
-    },
-    {
       image: '/images/services/graffiti-removal.jpg',
       title: 'Graffiti & Stain Removal',
       description: 'Fast, effective removal of graffiti, vandalism, and stubborn stains from brick, concrete, and other surfaces. Restore your property\'s appearance and protect your investment.',
