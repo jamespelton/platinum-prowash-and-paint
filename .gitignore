@@ -39,3 +39,22 @@ att.*
 
 # Build artifacts
 tsconfig.tsbuildinfo
+
+# Local Netlify folder
+.netlify
+node_modules/
+ios/Pods/
+android/build/
+android/.gradle/
+android/app/build/
+build/
+dist/
+.next/
+.expo/
+coverage/
+*.pickle
+token.json
+token_*.json
+credentials.json
+.env
+.env.local

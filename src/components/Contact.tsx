@@ -5,6 +5,7 @@ import './Contact.css'
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [loadedAt] = useState(() => Date.now())
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -12,6 +13,31 @@ const Contact = () => {
 
     const form = e.currentTarget
     const formData = new FormData(form)
+
+    // Spam check 1: honeypot fields (bots fill these)
+    if (formData.get('bot-field') || formData.get('website')) {
+      window.location.href = '/success.html'
+      return
+    }
+
+    // Spam check 2: required fields must not be empty
+    const name = (formData.get('name') as string || '').trim()
+    const phone = (formData.get('phone') as string || '').trim()
+    const email = (formData.get('email') as string || '').trim()
+    const service = (formData.get('service') as string || '').trim()
+    if (!name || !phone || !email || !service) {
+      window.location.href = '/success.html'
+      return
+    }
+
+    // Spam check 3: form submitted too fast (< 3 seconds = bot)
+    if (Date.now() - loadedAt < 3000) {
+      window.location.href = '/success.html'
+      return
+    }
+
+    // Remove honeypot fields before sending
+    formData.delete('website')
 
     try {
       const response = await fetch('/', {
@@ -59,6 +85,10 @@ const Contact = () => {
                   Don't fill this out: <input name="bot-field" />
                 </label>
               </p>
+              <div style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0, overflow: 'hidden' }} aria-hidden="true">
+                <label htmlFor="website">Website</label>
+                <input type="text" id="website" name="website" tabIndex={-1} autoComplete="off" />
+              </div>
 
               <div className="form-row">
                 <div className="form-group">
