@@ -104,7 +104,7 @@ const Footer = () => {
             © {new Date().getFullYear()} {BUSINESS_NAME}. All rights reserved. | Licensed, Bonded & Insured
           </p>
           <p className="credit">
-            Website by James Pelton Web & AI
+            Website by <a href="https://getjpweb.com">JPWeb</a>
           </p>
         </div>
       </div>
