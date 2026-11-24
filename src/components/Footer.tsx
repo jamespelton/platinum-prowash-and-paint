@@ -92,6 +92,9 @@ const Footer = () => {
                 <FaMapMarkerAlt />
                 <span>Beatrice, NE<br />Serving Lincoln & surrounding areas</span>
               </li>
+              <li>
+                <span>In Lincoln: <a href="/lincoln/pressure-washing/">Pressure washing</a> · <a href="/lincoln/painting/">Painting</a></span>
+              </li>
             </ul>
           </div>
         </div>
